@@ -46,6 +46,7 @@ app.use(function(req, res, next) {
   );
   next();
 });
+
 app.use("/", routes);
 const port = process.env.PORT || 5000;
 app.listen(port, err => {
