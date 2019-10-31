@@ -4,6 +4,8 @@ const express = require("express"),
   methodOverride = require("method-override"),
   cors = require("cors");
 
+//mongoose.connect('mongodb://localhost/EVENTS' ,{useNewUrlParser: true})
+
 db = mongoose.connect(
   "mongodb+srv://Manvi_Tyagi:abcd@cluster0-lwpy4.mongodb.net/test?retryWrites=true&w=majority",
   { useNewUrlParser: true },
@@ -14,7 +16,6 @@ db = mongoose.connect(
 );
 
 
-//mongoose.connect('mongodb://localhost/EVENTS' ,{useNewUrlParser: true})
 
 const app = express();
 
